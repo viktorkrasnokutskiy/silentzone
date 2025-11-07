@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SilentZone — Контакты</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-waves"></div>
+
+  <!-- Верхняя панель -->
+  <header class="header container" role="banner">
+    <div class="logo" onclick="location.href='index.html'" style="cursor:pointer;">
+      <img src="assets/logo.png" alt="SilentZone logo" class="logo-border">
+      <div>
+        <div style="font-weight:800; color:#fff;">SilentZone</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:3px">Звукоизоляция и акустика</div>
+      </div>
+    </div>
+
+    <nav class="nav" role="navigation">
+      <a href="index.html">Главная</a>
+      <a href="materials.html">Материалы</a>
+      <a href="solutions.html">Готовые решения</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a class="cta" href="contacts.html">Рассчитать звукоизоляцию</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Контакты</h1>
+    <p class="small">Выберите удобный способ связи — Telegram или WhatsApp. Ответим в течение десяти минут.</p>
+
+    <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:18px">
+
+      <!-- Форма -->
+      <div style="flex:1;min-width:300px">
+        <div class="card form">
+          <form onsubmit="return openContactFromForm(event)">
+
+            <label for="name">Имя</label>
+            <input id="name" class="input" placeholder="Ваше имя">
+
+            <label for="phone">Телефон</label>
+            <input id="phone" class="input" placeholder="+998..." required>
+
+            <label for="method">Способ связи</label>
+            <select id="method" class="select">
+              <option value="telegram">Telegram</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+
+            <div style="height:12px"></div>
+
+            <button class="btn btn-primary" type="submit">
+              Отправить заявку
+            </button>
+
+            <div style="height:10px"></div>
+            <div class="small">
+              Или напишите нам напрямую:
+              <a href="https://t.me/Viktor_Krasnokutskiy" target="_blank">Telegram</a> ·
+              <a href="https://wa.me/998946613346" target="_blank">WhatsApp</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Правая колонка -->
+      <div style="flex:1;min-width:260px">
+        <div class="card" style="padding:18px">
+          <h3>Контактная информация</h3>
+          <p class="small">Виктор — менеджер / консультант</p>
+
+          <p class="small">
+            Telegram:
+            <a href="https://t.me/SilentZoneGroup" target="_blank">SilentZoneGroup</a>
+          </p>
+
+          <p class="small">
+            WhatsApp:
+            <a href="https://wa.me/998946613346" target="_blank">+998 94 661-33-46</a>
+          </p>
+
+          <div style="height:12px"></div>
+
+          <h4>Как мы работаем</h4>
+          <p class="small">
+            Консультация → Выезд на замер → Подбор материалов →
+            Согласование → Монтаж.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer container">
+    <div>© SilentZone — Все права защищены</div>
+    <div class="socials">
+      <a href="https://t.me/SilentZoneGroup" target="_blank">Telegram</a> · 
+      <a href="https://www.instagram.com/silentzonegroup" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

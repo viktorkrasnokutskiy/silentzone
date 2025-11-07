@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SilentZone — Готовые решения</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-waves"></div>
+
+  <!-- Верхняя панель -->
+  <header class="header container" role="banner">
+    <div class="logo" onclick="location.href='index.html'" style="cursor:pointer;">
+      <img src="assets/logo.png" alt="SilentZone logo" class="logo-border">
+      <div>
+        <div style="font-weight:800; color:#fff;">SilentZone</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:3px">Звукоизоляция и акустика</div>
+      </div>
+    </div>
+    <nav class="nav" role="navigation">
+      <a href="index.html">Главная</a>
+      <a href="materials.html">Материалы</a>
+      <a href="solutions.html" class="active">Готовые решения</a>
+      <a href="contacts.html">Контакты</a>
+      <a class="cta" href="contacts.html">Рассчитать звукоизоляцию</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Готовые решения</h1>
+    <p class="small">
+      Звукоизоляционные системы потолка, стен, пола и перегородок, разработанные инженерами компании SoundGuard.
+    </p>
+
+    <section style="margin-top:16px">
+      <div class="grid">
+
+        <!-- Решение 1 -->
+        <div class="card solution-item">
+          <img src="assets/рис 15.jpg" alt="Звукоизоляция стен" onclick="openLightbox(this)">
+          <h3>Стены</h3>
+          <p class="small">Каркасные и бескаркасные решения с разной эффективностью, назначением и толщиной систем.</p>
+        </div>
+
+        <!-- Решение 2 -->
+        <div class="card solution-item">
+          <img src="assets/рис 16.jpg" alt="Звукоизоляция потолков" onclick="openLightbox(this)">
+          <h3>Потолки</h3>
+          <p class="small">Каркасные системы звукоизоляции Базис, Оптима, Премиум, Аква и бескаркасные системы GIPSLOCK.</p>
+        </div>
+
+        <!-- Решение 3 -->
+        <div class="card solution-item">
+          <img src="assets/рис 17.jpg" alt="Звукоизоляция пола" onclick="openLightbox(this)">
+          <h3>Полы</h3>
+          <p class="small">Системы звукоизоляции как под стяжку, так и под финишное покрытие.</p>
+        </div>
+
+        <!-- Решение 4 -->
+        <div class="card solution-item">
+          <img src="assets/рис 18.jpg" alt="Звукоизоляция перегородок" onclick="openLightbox(this)">
+          <h3>Перегородки</h3>
+          <p class="small">Системы звукоизоляции перегородок — Базис, Оптима, Премиум и Аква.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section style="margin-top:22px">
+      <h2>Индивидуальные проекты</h2>
+      <div class="card">
+        <p class="small">
+          Мы также готовы разработать комплексное решение под конкретный объект.
+          Опишите вашу проблему и желаемый результат, а мы подберём нужные решения.
+        </p>
+        <div style="margin-top:12px">
+          <a class="cta" href="contacts.html">Рассчитать звукоизоляцию</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- Футер -->
+  <footer class="footer container">
+    <div>© SilentZone — Все права защищены</div>
+    <div class="socials">
+      <a href="https://t.me/SilentZoneGroup" target="_blank">Telegram</a> · 
+      <a href="https://www.instagram.com/silentzonegroup" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
