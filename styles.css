@@ -33,12 +33,6 @@ body {
   padding: 0 18px;
 }
 
-/* HEADER */
-.header {
-  justify-content: flex-start;
-  gap: 20px; /* óâåëè÷èâàåò ðàññòîÿíèå ìåæäó ëîãîòèïîì è ìåíþ */
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -304,4 +298,5 @@ h2 {
   }
 
 }
+
 
