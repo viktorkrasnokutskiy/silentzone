@@ -304,3 +304,78 @@ h2 {
   }
 
 }
+/* ======== АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ ======== */
+@media (max-width: 900px) {
+  /* Главный блок hero */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  /* Правая карточка в hero */
+  .hero > div:last-child {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero .card {
+    width: 100%;
+  }
+
+  /* Сетка карточек преимуществ */
+  .grid {
+    grid-template-columns: 1fr; /* одна колонка */
+  }
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .nav a.cta {
+    display: block;
+    margin-top: 8px;
+  }
+
+  /* Контейнер и отступы */
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* Футер */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  /* Изображения */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Без горизонтальной прокрутки */
+  body {
+    overflow-x: hidden;
+  }
+}
+
