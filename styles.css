@@ -33,6 +33,12 @@ body {
   padding: 0 18px;
 }
 
+/* HEADER */
+.header {
+  justify-content: flex-start;
+  gap: 20px; /* увеличивает расстояние между логотипом и меню */
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -298,5 +304,6 @@ h2 {
   }
 
 }
+
 
 
