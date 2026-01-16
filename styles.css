@@ -305,18 +305,8 @@ h2 {
 
 }
 
-/* Select (Telegram / WhatsApp) */
-select,
-.select {
-  color: #ffffff;            /* цвет выбранного текста */
-  background-color: #1b2a44; /* фон поля */
-}
 
-/* Выпадающий список */
-select option {
-  color: #000000;            /* ЧЁРНЫЙ текст */
-  background-color: #ffffff; /* БЕЛЫЙ фон */
-}
+
 
 
 
