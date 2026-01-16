@@ -15,7 +15,28 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-17832720282');
+
 </script>
+
+  <!-- Event snippet for Интерактивные номера телефонов conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17832720282/T10_CK7GuOYbEJrvprdC',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   
 </head>
 <body>
@@ -96,9 +117,12 @@
           </p>
 <p class="small">
   Телефон:
-  <a href="tel:+998946613346" style="text-decoration:underline;color:var(--accent)">
-    +998 94 661-33-46
-  </a>
+<a href="tel:+998946613346"
+   onclick="return gtag_report_conversion('tel:+998946613346');"
+   style="text-decoration:underline;color:var(--accent)">
+  +998 94 661-33-46
+</a>
+
 </p>
 
           <div style="height:12px"></div>
