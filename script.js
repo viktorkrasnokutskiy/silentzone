@@ -1,31 +1,31 @@
-// Lightbox
-function openLightbox(img) {
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  lightboxImg.src = img.src;
-  lightbox.style.display = 'flex';
-}
-
-function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
-}
-
-// Форма
+// Р¤РѕСЂРјР°
 function openContactFromForm(event) {
   event.preventDefault();
-  const name = document.getElementById('name').value || "Клиент";
+
+  const name = document.getElementById('name').value || 'РљР»РёРµРЅС‚';
   const phone = document.getElementById('phone').value;
   const method = document.getElementById('method').value;
 
   if (!phone) {
-    alert("Пожалуйста, укажите номер телефона");
+    alert('РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СѓРєР°Р¶РёС‚Рµ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°');
     return false;
   }
 
-  if (method === "telegram") {
-    window.open(`https://t.me/Viktor_Krasnokutskiy?text=Здравствуйте, меня зовут ${name}. Хочу рассчитать звукоизоляцию. Мой телефон: ${phone}`);
+  const message =
+    `Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, РјРµРЅСЏ Р·РѕРІСѓС‚ ${name}.\n` +
+    `РҐРѕС‡Сѓ СЂР°СЃСЃС‡РёС‚Р°С‚СЊ Р·РІСѓРєРѕРёР·РѕР»СЏС†РёСЋ.\n` +
+    `РњРѕР№ С‚РµР»РµС„РѕРЅ: ${phone}`;
+
+  const encodedMessage = encodeURIComponent(message);
+
+  let url = '';
+
+  if (method === 'telegram') {
+    url = `https://t.me/Viktor_Krasnokutskiy?text=${encodedMessage}`;
   } else {
-    window.open(`https://wa.me/998946613346?text=Здравствуйте, меня зовут ${name}. Хочу рассчитать звукоизоляцию. Мой телефон: ${phone}`);
+    url = `https://wa.me/998946613346?text=${encodedMessage}`;
   }
+
+  window.open(url, '_blank');
   return false;
 }
