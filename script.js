@@ -26,6 +26,14 @@ function openContactFromForm(event) {
     url = `https://wa.me/998946613346?text=${encodedMessage}`;
   }
 
-  window.open(url, '_blank');
-  return false;
+// Отправка конверсии "Отправка формы"
+gtag('event', 'conversion', {
+  'send_to': 'AW-17832720282/w92XCPmau9cbEJrvprdC',
+  'value': 1.0,
+  'currency': 'USD'
+});
+
+window.open(url, '_blank');
+return false;
 }
+
